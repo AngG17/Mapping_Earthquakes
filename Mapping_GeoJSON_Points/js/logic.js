@@ -89,7 +89,7 @@ d3.json(airportData).then(function(data) {
     pointToLayer: function(feature, latlng) {
       console.log(feature);
       return L.marker(latlng)
-      .bindPopup("<h2>"  + feature.properties.faa +" </h2><hr><h3>" + feature.properties.name + " </h3>")
+      .bindPopup("<h2> Airport code: "  + feature.properties.faa +" </h2><hr><h3> Airport name: " + feature.properties.name + " </h3>")
      }
      }).addTo(map)})
 
